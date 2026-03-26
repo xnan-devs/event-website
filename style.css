@@ -140,24 +140,22 @@ nav a:hover::after {
     margin-left: auto;
   }
 
-  nav ul {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #0f172a;
-    width: 200px;
-    flex-direction: column;
-    padding: 20px;
+nav ul {
+  position: absolute;
+  top: 60px;
+  left: 0;  
+  width: 100%; 
+  background: #0f172a;
+  flex-direction: column;
+  padding: 20px;
 
-    transform: translateX(100%);
-    transition: transform 0.4s ease-in-out;
-    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
-  }
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
 
   nav ul.active {
-    transform: translateX(0);
-  }
-
+  transform: translateY(0);
+}
   .hero h1 {
     font-size: 28px;
   }
